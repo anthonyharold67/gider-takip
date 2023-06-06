@@ -10,7 +10,7 @@ const gelirVal = document.getElementById("gelir-val");//gelir bilgisinin girildi
 const gelirEkle = document.getElementById("ekle");// gelirin eklendiği button
 const kalanDiv = document.getElementById("kalan");// toplam bilgilerinin gösterildiği alan
 const myDate = document.getElementById("giderTarih");// tarihin seçildiği inputa min ve max dğerlerini tanımlamak için yakaladığımız input.
-const alertDiv = document.getElementById("alert");// uyarıyı gösterdiğimiz div
+// const alertDiv = document.getElementById("alert");// uyarıyı gösterdiğimiz div
 const temizle = document.getElementById("temizle");// bilgilerin hepsini temizlemek için kullanılan buton
 
 //! inputun min ve max tarihlerini belirleme
@@ -98,22 +98,22 @@ tableBody.addEventListener("click", (e) => {
     myArr = myArr.filter((gider) => gider.id != id); // arrayden silmiş olduk
     localStorage.setItem("harcamalar", JSON.stringify(myArr)); //locali update etmiş olduk
     kalanHesapla(); // total bilgilerini güncellemiş olduk
-    let myAlert = `
-      <div
-        class="alert alert-success w-50 d-flex justify-content-between"
-        role="alert">
-        <span>Harcamayı başarıyla sildiniz!</span>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="alert"
-          aria-label="Close"></button>
-      </div>
-    `; //alert verdirmek için
-    alertDiv.innerHTML = myAlert;
-    setTimeout(() => {
-      alertDiv.innerHTML = "";
-    }, 3000); //alerti 3 saniye sonra kaldırmak için
+//     let myAlert = `
+//       <div
+//         class="alert alert-success w-50 d-flex justify-content-between"
+//         role="alert">
+//         <span>Harcamayı başarıyla sildiniz!</span>
+//         <button
+//           type="button"
+//           class="btn-close"
+//           data-bs-dismiss="alert"
+//           aria-label="Close"></button>
+//       </div>
+//     `; //alert verdirmek için
+//     alertDiv.innerHTML = myAlert;
+//     setTimeout(() => {
+//       alertDiv.innerHTML = "";
+//     }, 3000); //alerti 3 saniye sonra kaldırmak için
   }
 });
 
