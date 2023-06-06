@@ -153,5 +153,6 @@ temizle.addEventListener("click",()=>{
   myArr = [];
   localStorage.clear();
   kalanHesapla();
+  gelir = 0;
   tableBody.innerHTML="";
 })
