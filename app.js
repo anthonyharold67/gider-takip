@@ -151,8 +151,8 @@ function kalanHesapla() {
 //! bütün bilgilerin temizlendği alan
 temizle.addEventListener("click",()=>{
   myArr = [];
+   gelir = 0;
   localStorage.clear();
   kalanHesapla();
-  gelir = 0;
   tableBody.innerHTML="";
 })
